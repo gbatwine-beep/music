@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song of Happiness (歡樂歌) - Chinese Music Culture</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 15px;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #333;
+            min-height: 100vh;
+            line-height: 1.5;
+            font-size: 18px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .city-header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #e67e22;
+        }
+        
+        .city-header h1 {
+            font-size: 2.5em;
+            color: #003366;
+            margin-bottom: 8px;
+            text-decoration: underline;
+        }
+        
+        .content-section {
+            margin-bottom: 25px;
+        }
+        
+        /* 字体大小 */
+        .content-section p {
+            font-size: 1.15em;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        /* 四张小图片容器 */
+        .small-images-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .small-image-item {
+            flex: 0 0 calc(25% - 15px);
+            max-width: 200px;
+            height: 150px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border: 2px solid #e67e22;
+        }
+        
+        .small-image-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* 价值观列表 */
+        .values-list {
+            background: #f0f4f8;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid #e67e22;
+        }
+        
+        .values-list h3 {
+            color: #003366;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .values-list ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .values-list li {
+            padding: 8px 15px;
+            margin: 5px 0;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid #003366;
+            font-size: 1.1em;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        /* 音频播放器样式 */
+        .audio-player {
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        audio {
+            width: 100%;
+        }
+        
+        /* 关键词样式 */
+        .keyword {
+            font-weight: bold;
+            color: #003366;
+        }
+        
+        .navigation {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #e67e22;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 0 10px;
+            background: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .btn:hover {
+            background: #e67e22;
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+                margin: 5px;
+            }
+            
+            .city-header h1 {
+                font-size: 2em;
+            }
+            
+            .btn {
+                display: block;
+                margin: 8px 0;
+            }
+            
+            .small-image-item {
+                flex: 0 0 calc(50% - 15px);
+                height: 120px;
+            }
+            
+            .values-list li {
+                display: block;
+                margin-right: 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .small-image-item {
+                flex: 0 0 100%;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="city-header">
+            <h1>A. Song of Happiness (歡樂歌)</h1>
+        </div>
+        
+        <div class="content-section">
+            <p>"Song of Happiness" is a lively and joyful piece. It is often sung at celebrations and gatherings. It conveys themes of <span class="keyword">friendship（友谊）</span>, <span class="keyword">unity（团结）</span>, and <span class="keyword">optimism（乐观）</span>.</p>
+            
+            <p>With its upbeat melody and simple, memorable lyrics, the song encourages everyone to sing together and share joyful moments in life. Not only does it showcase the deep emotions between people, but it also reflects a vision of a harmonious and happy society, serving as a wonderful expression of joy and gratitude.</p>
+            
+            <!-- 价值观列表 -->
+            <div class="values-list">
+                <h3>Values to be learnt from this Chinese piece:</h3>
+                <ul>
+                    <li>Friendship</li>
+                    <li>Unity</li>
+                    <li>Harmony</li>
+                    <li>Gratitude</li>
+                </ul>
+            </div>
+            
+            <!-- 四张小图片 -->
+            <div class="small-images-container">
+                <div class="small-image-item">
+                    <img src="https://imgur.com/h1kKuvy.jpg" alt="Children singing happily">
+                </div>
+                <div class="small-image-item">
+                    <img src="https://imgur.com/MArMsUk.jpg" alt="Traditional Chinese celebration">
+                </div>
+                <div class="small-image-item">
+                    <img src="https://imgur.com/YSd7ZnZ.jpg" alt="Chinese musical instruments">
+                </div>
+                <div class="small-image-item">
+                    <img src="https://imgur.com/uZ1CH36.jpg" alt="Joyful performance">
+                </div>
+            </div>
+            
+            <!-- 音频播放器 -->
+            <div class="audio-player">
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    您的浏览器不支持音频播放。
+                </audio>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="jiangnan.html" class="btn">Back to Jiangnan Page</a>
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
